@@ -1,0 +1,4 @@
+.terraform
+
+# Do not check in the terraform variables file.
+*.tfvars
