@@ -10,17 +10,20 @@ terraform {
 # Configure the GitHub Provider
 provider "github" {}
 
+variable "github_token" {}
 
-resource "github_repository" "example" {
-  name        = "example"
+
+variable "app_name" {
+
+}
+resource "heroku_app" "my_app" {
+  name = github_repository.main_app.name
+  region = "us"
+}
+
+
+resource "github_repository" "main_app" {
+  name        = var.app_name
   description = "My awesome web page"
-
-    visibility = "private"
-
-  pages {
-    source {
-      branch = "master"
-      path   = "/docs"
-    }
-  }
+  visibility = "public"
 }

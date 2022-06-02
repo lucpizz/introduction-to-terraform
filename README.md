@@ -13,4 +13,9 @@ It is recommedned you also have:
 - [tfenv](https://github.com/tfutils/tfenv) - for managing multiple versions of Terraform. 
 - [tflint](https://github.com/terraform-linters/tflint) - for linting Terraform files.
 
+# 01-Basics
+
+In this section we will cover the basics of Terraform.
+
+
 
