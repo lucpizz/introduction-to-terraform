@@ -33,5 +33,3 @@ terraform {
   }
 }
 ```
-
-This allows the provider to interact with the AWS API. The backend is the location where the state is stored.
